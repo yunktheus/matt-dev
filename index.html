@@ -501,6 +501,11 @@
     pointer-events: none;
     border: none;
   }
+  .project-preview img {
+    width: 100%; height: 100%;
+    object-fit: cover; object-position: top center;
+    display: block;
+  }
   .project-preview-overlay {
     position: absolute; inset: 0;
     background: linear-gradient(to bottom, transparent 50%, var(--surface));
@@ -971,7 +976,7 @@
       <!-- PROJECT 4 -->
       <a href="https://porto-santos-advocacia.vercel.app/" target="_blank" class="project-card" rel="noopener">
         <div class="project-preview">
-          <iframe src="https://porto-santos-advocacia.vercel.app/" loading="lazy" title="Porto Santos Advocacia — Site institucional"></iframe>
+          <img src="https://api.microlink.io/?url=https%3A%2F%2Fporto-santos-advocacia.vercel.app%2F&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=800" loading="lazy" alt="Preview do site Porto Santos Advocacia">
           <div class="project-preview-overlay"></div>
           <div class="project-num">04 / 04</div>
         </div>
